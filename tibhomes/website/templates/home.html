@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <title>Home</title>
   <link rel="stylesheet" href="/static/css/home.css" type="text/css" />
-  <script src="jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="/static/css/nav_bar.css" type="text/css" />
+  <link rel="stylesheet" href="/static/css/social_media.css" type="text/css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/static/js/navshadow.js"></script>
 </head>
@@ -33,44 +34,41 @@
       </div>
     </div>
 
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="../../static/img/home1.jpg" style="width:100%">
+    <div class="content-main">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="../../static/img/home1.jpg" style="width:100%; height:1000px;">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../../static/img/home2.jpg" style="width:100%; height:1000px;">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../../static/img/home3.jpg" style="width:100%; height:1000px;">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../../static/img/home4.png" style="width:100%; height:1000px;">
+        </div>
+
+        <!-- These ar fudging up atm, might try to fix later
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        -->
       </div>
 
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="../../static/img/home2.jpg" style="width:100%">
-      </div>
+      <div class="about-me-container">
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
 
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="../../static/img/home3.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="../../static/img/home4.png" style="width:100%">
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      <br>
-
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-    </div>
-
-
-    <div class="about-me-container">
-      <img src="pic-of-andrew" style="float:left">
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et pretium arcu, id semper justo. In molestie, ante eu aliquam malesuada, mi est mollis ante, eget faucibus nibh massa in mauris. Nam tincidunt enim vitae dolor egestas, sed scelerisque lacus sodales. Nunc suscipit purus nunc, ut mattis augue porta vel. Integer lobortis varius quam nec bibendum. In sollicitudin neque at semper fringilla. Fusce condimentum nisl ut urna congue cursus nec ac eros. Maecenas euismod erat velit, in volutpat lorem rutrum eu. Phasellus sit amet ultrices diam. Proin tempor non ex ac finibus. Sed a placerat ante, vitae imperdiet lectus. Pellentesque consequat augue vitae malesuada egestas. Morbi ultrices, orci vitae suscipit semper, erat eros luctus metus, ac auctor libero metus ut erat. Maecenas non ullamcorper justo, sed fermentum urna.
+        <div class="about-me-card">
+        <img src="../../static/img/sample_abtmeportait.jpg" class="andrew" />
+        <div class="about-me-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et pretium arcu, id semper justo. In molestie, ante eu aliquam malesuada, mi est mollis ante, eget faucibus nibh massa in mauris. Nam tincidunt enim vitae dolor egestas, sed scelerisque lacus sodales. Nunc suscipit purus nunc, ut mattis augue porta vel. Integer lobortis varius quam nec bibendum. In sollicitudin neque at semper fringilla. Fusce condimentum nisl ut urna congue cursus nec ac eros. Maecenas euismod erat velit, in volutpat lorem rutrum eu. Phasellus sit amet ultrices diam. Proin tempor non ex ac finibus. Sed a placerat ante, vitae imperdiet lectus. Pellentesque consequat augue vitae malesuada egestas. Morbi ultrices, orci vitae suscipit semper, erat eros luctus metus, ac auctor libero metus ut erat. Maecenas non ullamcorper justo, sed fermentum urna.
 
 Suspendisse euismod ac ex eget fringilla. In hac habitasse platea dictumst. Vivamus ullamcorper velit nec sem vehicula varius. Etiam faucibus, est et suscipit dictum, enim dui malesuada libero, a consectetur eros orci id tellus. In non mi tortor. Vestibulum facilisis purus at enim sollicitudin fermentum. Proin eget augue rhoncus, condimentum mauris non, ultrices turpis. Sed eu interdum diam. Maecenas risus tellus, euismod a fermentum sit amet, lacinia et justo. Donec lobortis facilisis mollis. Donec vulputate vitae orci at accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus quis elementum tortor. Proin et libero sem. Quisque et leo purus. Quisque feugiat, ex quis malesuada commodo, quam risus ultricies dolor, congue ornare arcu mauris ut erat.
 
@@ -79,10 +77,38 @@ Pellentesque in auctor turpis. Nulla facilisi. In dictum nisi id nulla feugiat p
 Etiam placerat enim lacus, et pretium nisl dignissim eu. Pellentesque sagittis tellus sit amet sem placerat, at mattis nisi efficitur. Sed id ex vitae tortor ultricies volutpat. Nulla lacus libero, facilisis eu est a, egestas gravida leo. Nam ullamcorper placerat nunc quis rhoncus. Vestibulum imperdiet tempus pellentesque. Sed dapibus consectetur velit sit amet porta. Morbi congue egestas augue, a malesuada ligula convallis eget.
 
 Pellentesque ac semper magna, eu consequat enim. Proin placerat, orci quis bibendum dictum, elit neque sodales dui, in cursus metus sapien nec lacus. Curabitur consequat lacinia ipsum, non lobortis lorem. Aenean sagittis vulputate fringilla. Donec malesuada turpis eget elit vehicula, vitae tincidunt nisl tincidunt. Phasellus lacinia, dolor non sollicitudin rutrum, massa tellus sodales diam, eget mollis enim risus ac augue. Phasellus elementum molestie nisl ac tincidunt. In eget arcu enim. Donec et mattis leo, ac scelerisque nulla. Donec nulla elit, pellentesque vitae nisl non, tempus dictum metus. In urna massa, sodales quis ullamcorper eu, hendrerit nec purus. Donec id arcu sagittis lacus scelerisque vestibulum vitae ac ante. Proin volutpat hendrerit elit et imperdiet. Praesent convallis felis a tortor porta eleifend eu ut urna. Nulla facilisi. Sed sit amet ultrices massa.
-</span>
+</div>
+      </div>
     </div>
-
+      <div class="contact-me-container">
+        <div class="contact-card">
+          <input class="input" type="text" placeholder="Name"/>
+          <input class="input" type="text" placeholder="Email" />
+          <br/>
+          <textarea class="input"
+          rows="5" columns="50" maxlength="200"
+          placeholder="Brief message"
+          style="width:850px;height:110px;font-size:20px !important;"></textarea>
+          <br/>
+          <input class="submit-contact" type="submit" value="Submit"/>
+        </div>
+      </div>
+      <div class="info-footer">
+        <div class="footer-container">
+          <div class="facebook-icon"></div>
+          <div class="twitter-icon"></div>
+          <div class="googleplus-icon"></div>
+          <div class="linkedin-icon"></div>
+        </div>
+        <div class="copyright-container">
+          Fake Copyright 2017,
+          <br>
+          Tibbetts Workshop LLC??
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 <script src="/static/js/home.js"></script>
+
 </html>

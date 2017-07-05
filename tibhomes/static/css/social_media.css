@@ -1,0 +1,70 @@
+
+ /****************
+  * Social Media *
+  ****************/
+
+ .info-footer {
+   position: relative;
+   height: 300px;
+   width: 100%;
+   float: left;
+   background: #e6e6e6;
+ }
+
+ .footer-container {
+   height:128px;
+   width: 1112px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .facebook-icon {
+   float: left;
+   background-image: url("../img/facebook_bw.png");
+   height:128px;
+   width:128px;
+ }
+ .facebook-icon:hover {
+   background-image: url("../img/facebook_color.png");
+ }
+
+ .twitter-icon {
+   float: left;
+   background-image: url("../img/twitter_bw.png");
+   height:128px;
+   width:128px;
+   margin-left: 200px;
+ }
+ .twitter-icon:hover {
+   background-image: url("../img/twitter_color.png");
+ }
+
+ .googleplus-icon {
+   float: left;
+   background-image: url("../img/googleplus_bw.png");
+   height:128px;
+   width:128px;
+   margin-left: 200px;
+ }
+ .googleplus-icon:hover {
+   background-image: url("../img/googleplus_color.png");
+ }
+
+ .linkedin-icon {
+   float: left;
+   background-image: url("../img/linkedin_bw.png");
+   height:128px;
+   width:128px;
+   margin-left: 200px;
+ }
+ .linkedin-icon:hover {
+   background-image: url("../img/linkedin_color.png");
+ }
+
+ .copyright-container {
+   margin-top: 100px;
+   width: 200px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+ }
